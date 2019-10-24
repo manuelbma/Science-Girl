@@ -1,0 +1,537 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+@import url('https://fonts.googleapis.com/css?family=Parisienne');
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
+
+@import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
+
+html{
+	scroll-behavior: smooth;
+}
+
+*{
+	box-sizing: border-box;
+    transition: all ease-in-out 250ms;
+}
+
+
+*::-webkit-scrollbar{
+	background: #004B8D;
+	width: 12px;
+}
+
+body{
+	margin: 0;
+
+  font-family: 'Cinzel', serif;
+	text-align: center;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+.container{
+	width: 95%;
+	max-width: 70em;
+	margin: 0 auto;
+}
+
+/*TIPOGRAFIAS*/
+
+h1{
+	font-weight: 300;
+	font-size: 1.7rem;
+	margin-top: 0;
+}
+
+.titulo{
+	font-size: 2.5rem;
+	color: white;
+	margin-bottom: 1.5em;
+	font-weight: 900;
+	margin-top: 1em;
+}
+
+.titulo4{
+	font-size: 2em;
+}
+
+.titulo2{
+	font-size: 2.5rem;
+	color: black;
+	margin-bottom: 1em;
+	font-weight: 900;
+	margin-top: 1em;
+
+  font-family: 'Cinzel', serif;
+}
+
+.texto2 span{
+	
+  font-family: 'Cinzel', serif;
+    font-weight: 900;
+    font-size: 1.3em;
+}
+
+.titulo3 {
+	color: white;
+	font-size: 2.5rem;
+	margin-bottom: 1.5em;
+	font-weight: 900;
+	margin-top: 1em;
+	font-family: 'Parisienne', cursive;
+}
+
+.titulo span{
+	font-weight: 300;
+	display: block;
+	font-size: 1.5rem;
+}
+
+@media (min-width:60rem ){
+	.titulo{
+		font-size: 3.7rem;
+	}
+	.titulo span{
+		font-size: 2rem;
+	}
+}
+
+
+/*BOTONCITOS*/
+
+.btn{
+	display: inline-block;
+	font-size: 1.15rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-width: 2px;
+	border-style: solid;
+	padding: .5em 1.75em;
+}
+
+.btn-small{
+	font-size: 1rem;
+	font-weight: 700;
+}
+
+@media (min-width: 60rem) {
+	.button {
+		font-size: 1.5rem;
+	}
+}
+
+.btn-accent{
+	color: white;
+	border-color: #004B8D;
+}
+
+.btn-accent:hover,
+.btn-accent:focus{
+	background: rgba(0,75,141);
+	color: white;
+}
+
+/* HEADER*/
+
+header{
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 1.2em;
+}
+
+nav ul{
+	margin: 1;
+	padding: 0;
+	list-style: none;
+}
+
+nav li {
+	display: inline-block;
+	margin-left: 1em;
+}
+
+nav a{
+	font-weight: 900;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 1rem;
+	padding: .5em;
+	color: #fff;
+}
+
+nav a:hover, nav a:focus{
+	color: #B80C43;
+}
+
+@media (min-width: 60rem){
+	.logo{
+		float: left;
+	}
+	nav{
+		float: right;
+	}
+}
+
+/*HERO IMAGE*/
+
+.hero{
+	background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0)), url("../IMG/hero.png") center no-repeat;
+	padding: 10em 0;
+	background-size: cover;
+	background-position: center;
+}
+
+@media (min-width: 60rem){
+	.hero{
+		height: 100vh;
+		padding-top: 35vh; 
+	}
+}
+
+@media (min-width: 769px){
+	.hero{
+		background-attachment: fixed;
+	}
+
+	.contenedor{    /*PARTE DEL QUIENES SOMOS*/
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+	
+	.center{
+		flex: 1;
+	}	
+
+	.add-flex{
+		flex: 1;
+	}
+
+	.add-padding-derecha{
+		padding-right: 10rem;
+	}
+
+	.imagen2{
+		min-height: 10rem;
+	}
+
+	.izquierda{
+		order: 1;
+	}
+
+	.derecha{
+		order: 2;
+	}
+}
+
+/*NUESTRA HISTORIA*/
+
+.imagen2{
+	width: 100%;
+	min-width: 20rem;
+	background-size: cover;
+}
+
+.store2{
+	width: 100%;
+	min-width: 20rem;
+	background-size: cover;
+	margin-top: 3rem;
+}
+
+.custom-font{
+	font-family: 'Kaushan Script', cursive;
+	font-size: 3.5rem;
+	text-align: center;
+	line-height: 1;
+	font-weight: 100;
+}
+
+.custom-font-secondary{
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	margin-right: -5px;
+	font-size: 1.5rem;
+	line-height: .2;
+	margin-bottom: 5rem;
+}
+
+.contenedor{
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.info-banner2{
+	padding: 20rem 0;
+	text-align: center;
+}
+
+.info-banner2-color{
+	color: white;
+}
+
+.texto2{
+	text-align: justify;
+}
+
+/*BANNER*/
+
+.banner2{
+	width: 100%;
+	background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../IMG/hero-7.png") center no-repeat;
+	background-size: cover;
+	padding: 10em 0;
+	background-attachment: fixed;
+}
+
+/*GALERIA*/
+
+.galeria{
+	margin-top: 3em 0 0;	
+}
+
+.port-item{
+	position: relative;
+	margin: 0;
+}
+
+.port-item img{
+	display: block;
+}
+
+.port-desc{
+	position: absolute;
+	z-index: 100;
+	bottom: 0em;
+	right: 0em;
+	left: 0em;
+	color: white;
+	background: rgba(0,0,0,0.6);
+	padding-bottom: 2.5em;
+}
+
+.port-desc p{
+	margin: 2em;
+}
+
+@media (min-width: 37rem){
+	.port-item{
+		width: 50%;
+		float: left;
+	}
+}
+
+@media (min-width: 60rem) {
+	.port-item {
+		width: 33.3333334%;
+		overflow: hidden;
+	}
+
+	.port-desc {
+		transform: translateY(150%);
+	}
+
+	.port-item:hover .port-desc {
+		transform: translateY(0%);
+	}
+}
+
+.img1{
+	width: 590px;
+	height: 340px;
+}
+
+/*MAPA*/
+
+.fondo{
+	background: #17202A;
+	height: 110%;
+	color: white;
+	max-height: 1000vh;
+	border-radius: 6px;
+	border-color: white;
+	border-style: solid;
+}
+
+iframe{
+	display: block;
+	width: 100%;
+	height: 50vh;
+	max-width: 1000vh;
+	max-height: 1000vh;
+	margin: 1em auto;
+
+}
+
+footer{
+	/*position: fixed;*/
+	bottom: 0;
+}
+.footer-distributed{
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+ 
+	padding: 55px 50px;
+	margin-top: 80px;
+}
+ 
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+ 
+.footer-distributed .footer-left{
+	width: 40%;
+}
+ 
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+ 
+.footer-distributed h3 span{
+	color:  #5383d3;
+}
+ 
+ 
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+ 
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+ 
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+ 
+ 
+.footer-distributed .footer-center{
+	width: 35%;
+}
+ 
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+ 
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+ 
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+ 
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+ 
+.footer-distributed .footer-center p a{
+	color:  #5383d3;
+	text-decoration: none;;
+}
+ 
+.footer-distributed .footer-right{
+	width: 20%;
+}
+ 
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+ 
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+ 
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+ 
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+ 
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+ 
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+ 
+ 
+@media (max-width: 880px) {
+ 
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	
+	}
+ 
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+ 
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+	.main {
+		line-height: normal;
+		font-size: auto;
+	}
+ 
+}
